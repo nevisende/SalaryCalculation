@@ -4,7 +4,7 @@ public class Printer {
     public void printer() {
         Scanner input = new Scanner(System.in);
 
-        System.out.print("Ad Soyad yazınız: ");
+        System.out.print("Ad ve Soyad yazınız: ");
         String name = input.nextLine();
 
         System.out.print("Maaşı yazınız : ");
@@ -18,7 +18,7 @@ public class Printer {
 
         Employee firstPerson = new Employee(name, salary,hireYear, workHours);
         System.out.println("----------------------------------------------------------------------------------------");
-        System.out.print("Çalışan verileri kaydedildi, bilgilerini görmek için : 1\nYeni bir çalışan girdisi oluşturmak için : 2\n"
+        System.out.print("Çalışanın verileri kaydedildi, bilgilerini görmek için : 1\nYeni bir çalışan girdisi oluşturmak için : 2\n"
             +"Çıkış yapmak için : 0 \n'a basınız : ");
 
         byte optionNumber = input.nextByte();
@@ -29,7 +29,7 @@ public class Printer {
             System.out.println("----------------------------------------------------------------------------------------");
             firstPerson.toString();
             System.out.println("----------------------------------------------------------------------------------------");
-            System.out.println("Çıkış yapmak ister misiniz (y / n) : ");
+            System.out.println("Çıkış yapmak ister misiniz? (y / n) : ");
 
             String secondAnswer = String.valueOf(input.hasNext("n"));
             if(secondAnswer == "true") {

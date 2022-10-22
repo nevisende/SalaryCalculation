@@ -3,7 +3,6 @@ public class Employee {
     private double salary;
     private int hireYear;
     private short workHours;
-    private int workingYear;
 
     public  Employee(String name, double salary, int hireYear, short workHours) {
         this.name = name;
