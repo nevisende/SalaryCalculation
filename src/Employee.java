@@ -65,4 +65,17 @@ public class Employee {
         return this.salary * raiseSalaryRatio/100;
     }
 
+    public String toString() {
+        double tax = tax();
+        double bonus = bonus();
+        double raiseSalary = raiseSalary();
+        double salaryWithTaxAndBonus = salary + bonus - tax;
+        double totalSalary = salaryWithTaxAndBonus + raiseSalary;
+        System.out.printf("Adı: %s\nMaaşı : %s\nÇalışma Saati : %s\nBaçlangıç Yılı : %s\nVergi: %s\nBonus : : %s\n",
+                name, salary, workHours,hireYear,tax,bonus);
+        System.out.printf("Maaş Artışı  : %s\nVergi ve Bonuslar ile birlikte maaş : %s\nToplam maaş : %s\n",
+                raiseSalary,salaryWithTaxAndBonus,totalSalary);
+        return "";
+    }
+
 }
